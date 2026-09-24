@@ -7,7 +7,7 @@
 [![Image](https://img.shields.io/badge/image-distroless%20%C2%B7%20non--root-2ea44f?logo=docker)](Dockerfile)
 [![Deploy](https://img.shields.io/badge/deploy-air--gapped%20ready-success)](#-развёртывание-в-kubernetes)
 
-<img width="1672" height="941" alt="k8sviewerlogo" src="https://github.com/user-attachments/assets/da116d43-9f6f-4745-b2fa-1e4844100890" />
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/4e4fb2a5-1f86-4130-a88a-bc8991132bdf" />
 
 > Один браузерный экран вместо десятков kubeconfig'ов, переключений
 > контекста `kubectl` и отдельного SSH-клиента. Смотрите и правите ресурсы, открываете терминалы к подам и нодам, работаете с файлами, видите топологию, метрики и дрейф конфигурации, пользуетесь набором инструментов сопровождения и администрируете доступ — всё в одном месте, в реальном времени.
@@ -56,21 +56,21 @@
 ## 3. Основные возможности приложения
 
 ### Обзор флота
-<img width="1911" height="609" alt="image" src="https://github.com/user-attachments/assets/7699fe60-ea20-41ac-890a-2fef130954ef" />
+<img width="1911" height="609" alt="image" src="https://github.com/user-attachments/assets/130f407d-08b3-4345-b1c6-c04bf23e4be5" />
 
 - **Cluster overview** — состояние всех кластеров, нод и нагрузок на одном экране; спарклайны CPU/Memory в реальном времени, бейдж устаревшего бэкапа, прогноз заполнения PVC, поиск по кластерам.
 - **Cluster-wide search (Ctrl+K)** — поиск ресурсов по всему флоту с инвертированным фильтром типов.
 - **Присутствие** — видно, кто из коллег какой кластер сейчас смотрит.
 
 ### Кластер и ресурсы
-<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/e1f771ae-3bf8-40af-8447-e55812144a6a" />
+<img width="1908" height="881" alt="image" src="https://github.com/user-attachments/assets/870493f1-79d2-4a2a-87e5-7a5481757ac2" />
 
 - **ClusterView** — список ресурсов выбранного типа: фильтры по namespace/статусу, сортировка колонок, группировка по namespace, экспорт в CSV. Поды, деплойменты, statefulset'ы, сервисы, ingress и произвольные CRD.
 - **Detail (карточка ресурса)** — обогащённый обзор со связанными кликабельными объектами, правка YAML с подсветкой, side-by-side YAML-diff между кластерами, просмотр логов (подсветка, follow/pause, поиск), live-карточка подов (Terminating/новые сразу по WebSocket).
 - **Действия** — restart, scale, rollout history и rollback, delete, apply произвольного YAML; контекстное меню действий в строке таблицы.
 
 ### Терминалы и файлы
-<img width="1041" height="579" alt="image" src="https://github.com/user-attachments/assets/105007b3-d83b-4ea2-aacf-c1be8911ecb8" />
+<img width="1041" height="579" alt="image" src="https://github.com/user-attachments/assets/f8e820f1-f27f-40c1-9e44-5ad913fd3de1" />
 
 - **Exec в под** — полноценный PTY-терминал (xterm.js): ANSI-цвета, resize, tab-completion.
 - **SSH в ноду** — терминал к узлу прямо в браузере (hub → бастион → admin-нода → нода); отдельный shell на admin-ноде, выбор пользователя.
@@ -79,14 +79,14 @@
 - **Node OS Health** — load, память, диски, failed systemd-юниты, dmesg — через SSH.
 
 ### Визуализация и диагностика
-<img width="1513" height="811" alt="image" src="https://github.com/user-attachments/assets/8b38cc35-ac47-4d92-9445-3cb93b50960f" />
+<img width="1513" height="811" alt="image" src="https://github.com/user-attachments/assets/ff305373-719d-4b1a-aeab-31057bd116c3" />
 
 - **Топология** — SVG force-directed граф (Deployment→Pods, Pod→Owner+Node, Service→Pods, Ingress→Services), zoom/pan, клик→переход.
 - **Service map** — карта связей сервисов, выведенная из конфигов (env/args/envFrom → DNS сервисов), подписи на рёбрах.
 - **Метрики и события** — CPU/Mem в реальном времени, история за 48 ч, поток событий кластера.
 
 ### Совместная работа и безопасность
-<img width="962" height="811" alt="image" src="https://github.com/user-attachments/assets/f20669d7-5cf4-4e4d-9800-e23d902f264b" />
+<img width="962" height="811" alt="image" src="https://github.com/user-attachments/assets/ef8bed18-d1a6-4516-8adf-9426c183ba1c" />
 
 - **Session sharing** — расшаривание терминала по ссылке, read-only зритель.
 - **Запись сессий** — exec/SSH-сессии записываются в формате asciinema и доступны к просмотру.
